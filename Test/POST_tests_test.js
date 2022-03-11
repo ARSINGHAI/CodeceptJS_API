@@ -8,6 +8,7 @@ Scenario('Sending POST request and checking response 200', ({ I }) =>
     
     I.sendPostRequest('https://reqres.in/api/users' , { "name": "morpheus" , "job" : "leader"} );
     I.seeResponseCodeIsSuccessful();
+    
 })
 Scenario('Sending POST request and checking response data' , async ({ I }) => 
 {
